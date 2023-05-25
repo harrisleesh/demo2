@@ -1,5 +1,8 @@
 name: fastcampus board
 
+env:
+  AWS_REGION: ap-northeast-2
+
 on:
   push:
     branches: [ main ]
