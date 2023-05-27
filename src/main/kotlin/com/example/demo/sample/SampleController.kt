@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class SampleController(
-    private val sampleRepository: SampleRepository,
+    private val sampleRepository: SampleRepository
 ) {
     @GetMapping("/sample")
     fun sample(): String {
