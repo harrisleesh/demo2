@@ -1,13 +1,3 @@
 spring:
-  datasource:
-    url: jdbc:mysql://awseb-e-eaybbpxi2b-stack-awsebrdsdatabase-ftq2e8sst9ta.clmsuvt265ah.ap-northeast-2.rds.amazonaws.com:3306/fastcampus
-    username: fastcampus
-    password: querido12
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
+  profiles:
+    active: dev
