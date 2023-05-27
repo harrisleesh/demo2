@@ -11,5 +11,5 @@ class Sample(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private val id: Long,
 
-    val name: String
+    val name: String,
 )
