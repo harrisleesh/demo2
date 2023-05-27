@@ -52,8 +52,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        region: ap-northeast-2
-        application_name: fastcampus3
-        environment_name: Fastcampus3-env
+        region: ${{ env.AWS_REGION }}
+        application_name: fast
+        environment_name: Fast-env
         version_label: github-action-${{steps.current-time.outputs.formattedTime}}
         deployment_package: deploy/deploy.zip
