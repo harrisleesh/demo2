@@ -34,6 +34,13 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
+    - name: Get current time
+      uses: 1466587594/get-current-time@v2
+      id: current-time
+      with:
+        format: YYYY-MM-DDTHH-mm-ss
+        utcOffset: "+09:00"
+
     - name: Generate deployment package
       run: |
         mkdir -p deploy
@@ -48,5 +55,5 @@ jobs:
         region: ap-northeast-2
         application_name: fastcampus3
         environment_name: Fastcampus3-env
-        version_label: $GITHUB_SHA
+        version_label: github-action-${{steps.current-time.outputs.formattedTime}}
         deployment_package: deploy/deploy.zip
