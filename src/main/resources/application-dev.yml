@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://awseb-e-bgnjz2hzav-stack-awsebrdsdatabase-i43qbrcttcf3.clmsuvt265ah.ap-northeast-2.rds.amazonaws.com:3306/fastcampus
+    url: jdbc:mysql://awseb-e-2gyapuxdjy-stack-awsebrdsdatabase-fqvgtjejfjom.clmsuvt265ah.ap-northeast-2.rds.amazonaws.com:3306/fastcampus
     username: fastcampus
     password: querido12
     driver-class-name: com.mysql.cj.jdbc.Driver
